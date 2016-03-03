@@ -1,0 +1,18 @@
+@import "../page-styles.css";
+
+html{
+	direction:ltr;
+}
+.container {
+	min-height:600px;
+	display:flex;
+	flex-direction:row-reverse;
+	flex-wrap:nowrap;
+	border:2px dashed;
+}
+.box {
+	width:150px;
+	height:150px;
+	background:#eee;
+	border:2px solid;
+}

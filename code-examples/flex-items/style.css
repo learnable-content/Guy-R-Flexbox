@@ -1,0 +1,26 @@
+@import "../page-styles.css";
+
+.container {
+	min-height:600px;
+	display:flex;
+	border:2px dashed;
+}
+.box {
+	flex-grow:1;
+	flex-shrink:1;
+	flex-basis:auto;
+	height:200px;
+	background:#eee;
+	border:2px solid;
+}
+.box:nth-child(3) {
+	flex:3;
+	align-self:stretch;
+	order:0;
+}
+
+
+
+
+
+

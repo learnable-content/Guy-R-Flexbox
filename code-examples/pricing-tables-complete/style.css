@@ -1,0 +1,18 @@
+@import "../page-styles.css";
+@import "../foundation-styles.css";
+
+@media screen and (min-width:450px) {
+	.pricing-container {
+		display:flex;
+		justify-content:center;
+		align-items:center;
+	}
+}
+.pricing-table {
+	flex-basis:30%;
+	max-width:18em;
+}
+.pricing-section {
+	text-align:center;
+	padding:2em;
+}

@@ -1,0 +1,48 @@
+@import "../page-styles.css";
+
+.site-main-content {
+	display:flex;
+	min-height:500px;
+}
+.site-sidebar-one {
+	flex-basis:100px;
+}
+.site-sidebar-two {
+	flex-basis:200px;
+}
+.site-content {
+	flex:1;
+}
+@media screen and (max-width:600px) {
+	.site-main-content {
+		flex-direction:column;
+	}
+	.site-content {
+		order:-1;
+	}
+	.site-content,
+	.site-sidebar-one,
+	.site-sidebar-two {
+		flex:1;
+		min-height:100px;
+	}
+
+
+
+
+}
+
+
+
+
+.site-header { background: #cb3827; }
+.site-footer { background: #4167b1; }
+.site-content { background: #ffcd33; }
+.site-sidebar-one { background:#359946; }
+.site-sidebar-two { background:#a94499; }
+
+.site-header,
+.site-footer,
+.site-sidebar-one,
+.site-sidebar-two,
+.site-content  { padding:2em; }

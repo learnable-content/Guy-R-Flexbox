@@ -1,0 +1,19 @@
+@import "../page-styles.css";
+
+html {
+	direction:ltr;
+}
+.container {
+	min-height:600px;
+	display:flex;
+	flex-flow:row wrap;
+	justify-content:space-around;
+	align-items:center;
+	align-content:space-around;
+	border:2px dashed; 
+}
+.box {
+	padding:1em;
+	background:#eee;
+	border:2px solid;
+}
