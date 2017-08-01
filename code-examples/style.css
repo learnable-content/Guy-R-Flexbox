@@ -1,92 +1,48 @@
 @import "../page-styles.css";
 
-body {
-	background:#ccc;
-}
-.form-container {
+.site-main-content {
 	display:flex;
-	justify-content:center;
-	align-items:center;
-	height:100vh;	
+	min-height:500px;
 }
-form {
-	width:75%;
-	padding:2em;
-	background:#fff;
-	font-family:Avenir;
-	border-radius:0.25em;
-	box-shadow:0 0 2em rgba(0,0,0,0.2)
+.site-sidebar-one {
+	flex-basis:100px;
 }
-input, select {
-	padding:0.5em;
-
-	font-size:0.875em;
-	font-family:inherit;
-
-	background:#f4f4f4;
-	border:1px solid #ccc;
-	border-width:1px 1px 1px 0;
-	border-radius:0;
-	-webkit-appearance:textfield;
-	-moz-appearance:textfield;
-	appearance:textfield;
-
-	transition:0.3s;
+.site-sidebar-two {
+	flex-basis:200px;
 }
-input:focus,
-select:focus {
-	background:#fff;
-	box-shadow:inset 0.1em 0.1em 0.25em rgba(0, 0, 0, 0.2);
-	outline:0;
-}
-
-.form-field {
-	display:flex;
-	margin-bottom:1em;
-}
-.form-field label {
-	flex: 0 1 3em;
-	padding:1em;
-
-	background:#fff;
-	border:1px solid #ccc;
-
-	font-size:0.75em;
-	text-align:center;
-	text-shadow:0 1px 0 #fff;
-	line-height:1;
-}
-.form-field input,
-.form-field select {
+.site-content {
 	flex:1;
 }
+@media screen and (max-width:600px) {
+	.site-main-content {
+		flex-direction:column;
+	}
+	.site-content {
+		order:-1;
+	}
+	.site-content,
+	.site-sidebar-one,
+	.site-sidebar-two {
+		flex:1;
+		min-height:100px;
+	}
 
-.form-field label {
-	border-radius:0.25em 0 0 0.25em;
+
+
+
 }
-.input-right input,
-.input-right select,
-.multi-input input:last-child,
-.multi-input select:last-child {
- 	border-radius:0 0.25em 0.25em 0;
-}
-.submit-field {
-	flex-direction:row-reverse;
-}
-input[type="submit"] {
-	flex:0 1 40%;
-	padding:0.5em;
-	font-size:1rem;
-	font-family:inherit;
-	text-shadow: 0 1px 0 #fff;
-	background:#b0e35a;
-	border-radius:0.25em;
-	border:0;
-	transition:0.3s;
-	cursor:pointer;
-}
-input[type="submit"]:hover {
-	color:#fff;
-	background:#cc3f85;
-	text-shadow:0 1px 0 #000;
-}
+
+
+
+
+.site-header { background: #cb3827; }
+.site-footer { background: #4167b1; }
+.site-content { background: #ffcd33; }
+.site-sidebar-one { background:#359946; }
+.site-sidebar-two { background:#a94499; }
+
+.site-header,
+.site-footer,
+.site-sidebar-one,
+.site-sidebar-two,
+.site-content  { padding:2em; }
