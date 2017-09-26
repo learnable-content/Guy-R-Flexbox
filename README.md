@@ -1,3 +1,3 @@
 # Guy-R-Flexbox
 
-Lesson 1.7
+Lesson 1.7 Final

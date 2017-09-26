@@ -7,7 +7,7 @@ body {
 	display:flex;
 	justify-content:center;
 	align-items:center;
-	height:100vh;	
+	height:100vh;
 }
 form {
 	width:75%;
@@ -74,7 +74,7 @@ select:focus {
 	flex-direction:row-reverse;
 }
 input[type="submit"] {
-	flex:0 1 40%;
+	flex: 0 1 40%;
 	padding:0.5em;
 	font-size:1rem;
 	font-family:inherit;
